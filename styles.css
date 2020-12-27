@@ -5,7 +5,7 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,220,255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 body {
-  min-height: 200vh;
+  min-height: 350vh;
   background: rgb(255, 227, 40);
   background: linear-gradient(
     180deg,
@@ -58,4 +58,30 @@ header {
 
 #go {
   color: #ffffff;
+}
+
+#card-section {
+  margin-top: 80vh;
+  border: 1px solid black;
+  min-height: 70vh;
+}
+
+#cards {
+  border: 1px solid red;
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reg-card-btn {
+  width: 150px;
+  position: relative;
+  bottom: -95px;
+  border-radius: 25px;
+  height: 40px;
+  color: #f32742;
+  background-color: black;
+  border: none;
 }
