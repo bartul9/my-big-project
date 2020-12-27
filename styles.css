@@ -1,0 +1,61 @@
+.navbar {
+  background-color: #02182b;
+}
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,220,255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+body {
+  min-height: 200vh;
+  background: rgb(255, 227, 40);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 227, 40, 1) 5%,
+    rgba(168, 121, 0, 1) 23%,
+    rgba(133, 8, 8, 1) 47%,
+    rgba(18, 6, 3, 1) 66%,
+    rgba(0, 0, 0, 1) 95%
+  );
+}
+
+.navbar-brand {
+  color: #f32742;
+}
+.nav-link {
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-btn {
+  background: rgb(181, 55, 24);
+  background: linear-gradient(
+    90deg,
+    rgba(181, 55, 24, 1) 13%,
+    rgba(92, 19, 2, 1) 50%,
+    rgba(0, 0, 0, 1) 80%
+  );
+  color: #f32742;
+  position: relative;
+  top: 35vh;
+  width: 250px;
+  height: 70px;
+  font-size: 25px;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 35px;
+}
+
+#main-btn:hover {
+  background: black;
+  transition-timing-function: ease-in;
+  border-radius: 37px;
+  transition-duration: 0.5s;
+  -webkit-box-shadow: 5px 6px 4px -1px #7a1108;
+  box-shadow: 5px 6px 4px -1px #7a1108;
+}
+
+#go {
+  color: #ffffff;
+}
