@@ -1,14 +1,14 @@
 body {
   min-height: 250vh;
   font-family: "Merriweather", serif;
-  background-color: #ffffff;
+  background-color: #3ed2f7;
 }
 
 .everything {
-  border-left: 3px solid#3ed2f79d;
-  border-right: 3px solid #3ed2f79d;
-  border-bottom: 3px solid #3ed2f79d;
-  background-color: #3ed2f70a;
+  border-left: 3px solid#3ed2f7;
+  border-right: 3px solid #3ed2f7;
+  border-bottom: 3px solid #3ed2f7;
+  background-color: #ffffff;
 }
 
 .navbar {
@@ -48,9 +48,9 @@ header {
 }
 
 .mainheading {
-  color: rgba(0, 0, 0, 0.822);
+  color: rgb(7, 138, 190);
   letter-spacing: 2px;
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 400;
 }
 
@@ -61,14 +61,14 @@ header {
   margin-top: 150px;
   margin-bottom: 25px;
   text-align: center;
-  color: black;
+  color: rgb(7, 138, 190);
   font-size: 35px;
   font-weight: 600;
 }
 
 .newsSection {
-  border-top: 3px solid #3ed2f79d;
-  border-bottom: 3px solid #3ed2f79d;
+  border-top: 1px solid #3ed2f7;
+  border-bottom: 1px solid #3ed2f7;
   min-height: 60vh;
   display: flex;
   flex-direction: row;
@@ -122,12 +122,13 @@ header {
 }
 
 #cards {
-  border: 3px solid #3ed2f79d;
+  border: 3px solid #3ed2f7;
   height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .cardOne {
@@ -174,11 +175,31 @@ h3 {
   display: none;
 } */
 
+/****************************************/
+
+/* Google map */
+.maps {
+  align-items: center;
+  margin-top: 150px;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 5px;
+}
+
 /* Form and its parts */
 /* ***************************** */
 
+.writeToUs {
+  font-size: 35px;
+  margin-bottom: 35px;
+  margin-left: 0px;
+}
+
 .form {
-  margin-top: 250px;
+  margin-top: 120px;
   color: rgb(0, 0, 0);
   margin-bottom: 30px;
 }
@@ -219,12 +240,6 @@ h3 {
 }
 
 @media (max-width: 476px) {
-  .mainheading {
-    font-size: 3.5rem;
-  }
 }
 @media (max-width: 350px) {
-  .mainheading {
-    font-size: 2.6rem;
-  }
 }
