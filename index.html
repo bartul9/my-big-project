@@ -25,7 +25,7 @@
   </head>
   <body>
     <!-- Bootstrap navbar -->
-    <section class="container p-0 everything">
+    <section class="container-fluid p-0 everything">
       <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container">
           <span class="navbar-brand" href="#"></span>
@@ -53,40 +53,11 @@
           </div>
         </div>
       </nav>
-      <header class="container">
+      <header class="container-fluid">
         <h1 class="mainheading">New Times</h1>
       </header>
       <h2 class="liveNews">Live News</h2>
-      <section class="container newsSection">
-        <div class="news america">
-          <h3 class="newsh3">America</h3>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-        </div>
-        <div class="news world">
-          <h3 class="newsh3">World</h3>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-          <div class="liveNewsDiv">Hello</div>
-        </div>
-      </section>
+      <section class="container-fluid newsSection"></section>
       <!-- Middle section with buttons -->
 
       <!-- ***************************** -->
@@ -116,13 +87,7 @@
                 nostrum porro dolores totam!
               </p>
             </div>
-            <!-- <span class="text hidden"
-              >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam
-              ratione laboriosam debitis placeat. Illum fugiat vitae,
-              necessitatibus nesciunt exercitationem ducimus error voluptate
-              iure magni dignissimos sunt obcaecati libero explicabo
-              maiores.</span
-            > -->
+
             <button class="reg-card-btn">Read</button>
           </div>
           <div id="cards" class="col-md-6 col-sm-12">
@@ -134,58 +99,29 @@
         </div>
       </section>
 
+      <!-- Google maps -->
+      <section class="container maps">
+        <h3>Where are we?</h3>
+        <!--The div element for the map -->
+        <div id="map"></div>
+      </section>
       <!-- Form section -->
 
       <!-- ********************************** -->
 
       <section class="container form">
+        <h2 class="writeToUs">Write to Us</h2>
         <form class="row g-3">
-          <div class="col-md-6">
-            <label for="inputEmail4" class="form-label">Email</label>
+          <div class="col-md-12">
+            <label for="inputEmail4" class="form-label">Your Name</label>
             <input type="email" class="form-control" id="inputEmail4" />
           </div>
-          <div class="col-md-6">
-            <label for="inputPassword4" class="form-label">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" />
+          <div class="form-group col-md-12">
+            <label for="writeToUs">Write Here</label>
+            <textarea class="form-control" id="writeToUs" rows="3"></textarea>
           </div>
           <div class="col-12">
-            <label for="inputAddress" class="form-label">Address</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputAddress"
-              placeholder="1234 Main St"
-            />
-          </div>
-          <div class="col-12">
-            <label for="inputAddress2" class="form-label">Address 2</label>
-            <input
-              type="text"
-              class="form-control"
-              id="inputAddress2"
-              placeholder="Apartment, studio, or floor"
-            />
-          </div>
-          <div class="col-md-6">
-            <label for="inputCity" class="form-label">City</label>
-            <input type="text" class="form-control" id="inputCity" />
-          </div>
-          <div class="col-md-4">
-            <label for="inputState" class="form-label">State</label>
-            <select id="inputState" class="form-select">
-              <option selected>Choose...</option>
-              <option>Croatia</option>
-            </select>
-          </div>
-          <div class="col-md-2">
-            <label for="inputZip" class="form-label">Zip</label>
-            <input type="text" class="form-control" id="inputZip" />
-          </div>
-          <div class="col-12">
-            <div class="form-check"></div>
-          </div>
-          <div class="col-12">
-            <button type="submit" class="btn myBtn">Register</button>
+            <button type="submit" class="btn myBtn">Submit</button>
           </div>
         </form>
       </section>
@@ -200,5 +136,11 @@
       crossorigin="anonymous"
     ></script>
     <script src="/app.js"></script>
+
+    <!-- Google maps API -->
+    <script
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzzMfrez51cZX236USh90GRiC9kOlVXYs&callback=initMap"
+    ></script>
   </body>
 </html>
