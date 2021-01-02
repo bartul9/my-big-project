@@ -14,6 +14,8 @@ body {
   );
 }
 
+/* *************************************** */
+/* Navbar */
 .navbar {
   background-color: #3ed2f780;
   border-radius: 1px;
@@ -35,6 +37,7 @@ body {
   color: rgb(5, 141, 151);
 }
 
+/* ************************************** */
 /* Header and its components */
 
 header {
@@ -49,13 +52,6 @@ header {
   border-bottom: 1px solid rgb(2, 2, 2);
 }
 
-.hero img {
-  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-}
-.promo {
-  clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
-}
-
 .mainImg {
   display: inline;
   width: 100%;
@@ -68,17 +64,77 @@ header {
   font-weight: 400;
 }
 
+/* ********************* */
+/* First paragraf boxes */
+.firstBoxBig {
+  display: flex;
+  flex-direction: row;
+  padding: 50px;
+  background: rgb(148, 187, 233);
+  background: radial-gradient(
+    circle,
+    rgba(148, 187, 233, 1) 0%,
+    rgba(148, 233, 232, 1) 50%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+.firstBox {
+  border: 1px solid rgba(63, 79, 224, 0.582);
+}
+
+.firstParagrafs {
+  padding: 15px;
+}
+
+/********************/
+
+/* angled divs */
+
+.hero {
+}
+
+.secondHalf {
+}
+
+.secondHalf img {
+  clip-path: polygon(100% 100%, 100% 0, 0 0, 0 90%);
+  width: 100%;
+}
+
+.hero img {
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  width: 100%;
+}
+
+/* Part with 4 divs and angled div around them */
+
+.promo {
+  clip-path: polygon(0 0, 100% 0, 100% 87%, 0 100%);
+  /* clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%); */
+}
+
+.promo {
+  background: rgb(148, 187, 233);
+  background: radial-gradient(
+    circle,
+    rgba(148, 187, 233, 0.7987570028011204) 0%,
+    rgba(148, 233, 232, 0.8015581232492998) 50%,
+    rgba(148, 187, 233, 0.7987570028011204) 100%
+  );
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  overflow: hidden;
+  padding: 150px 20px;
+  position: relative;
+  text-align: center;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* *************** */
+
 /* section with top news */
 /* ******************************** */
-
-.liveNews {
-  margin-top: 150px;
-  margin-bottom: 25px;
-  text-align: center;
-  color: rgb(7, 138, 190);
-  font-size: 35px;
-  font-weight: 600;
-}
 
 .newsSection {
   border-top: 1px solid #3ed2f7;
@@ -86,43 +142,13 @@ header {
   min-height: 60vh;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 0;
-}
-
-.news {
-  min-height: 60vh;
-  width: 50%;
-  overflow: scroll;
-  overflow-x: hidden;
-  height: 450px;
-}
-
-.america {
-  border-right: 1px solid #3ed2f79d;
-}
-
-.world {
-  border-left: 1px solid #3ed2f79d;
-}
-
-.newsh3 {
-  text-align: center;
-  font-size: 22px;
-  color: red;
-  font-weight: 300;
-  background-color: black;
-}
-
-/* live news divs */
-
-.liveNewsDiv {
-  border: 1px solid black;
-  padding-left: 15px;
-  margin: 15px;
 }
 
 /* Section with 4 divs */
 /* ********************************** */
+
 .top-news {
   margin-top: 150px;
   text-align: center;
@@ -133,6 +159,7 @@ header {
 }
 
 #card-section {
+  padding: 0;
 }
 
 #cards {
