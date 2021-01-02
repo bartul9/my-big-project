@@ -1,20 +1,24 @@
 body {
   min-height: 250vh;
   font-family: "Merriweather", serif;
-  background-color: #3ed2f7;
 }
 
 .everything {
-  border-left: 3px solid#3ed2f7;
-  border-right: 3px solid #3ed2f7;
-  border-bottom: 3px solid #3ed2f7;
-  background-color: #ffffff;
+  border-bottom: 1px solid rgb(12, 185, 216);
+  background: rgb(148, 187, 233);
+  background: radial-gradient(
+    circle,
+    rgba(148, 187, 233, 0.7987570028011204) 0%,
+    rgba(148, 233, 232, 0.8015581232492998) 50%,
+    rgba(148, 187, 233, 0.7987570028011204) 100%
+  );
 }
 
 .navbar {
-  background-color: #3ed2f7;
+  background-color: #3ed2f780;
   border-radius: 1px;
 }
+
 .navbar-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,220,255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
@@ -31,24 +35,34 @@ body {
   color: rgb(5, 141, 151);
 }
 
+/* Header and its components */
+
 header {
-  height: 70vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(https://images.unsplash.com/photo-1470219556762-1771e7f9427d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80);
+  background-image: url(https://images.unsplash.com/photo-1445023086979-7244a12345a8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=751&q=80);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   border-bottom: 1px solid rgb(2, 2, 2);
 }
+
+.hero img {
+  clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+}
+.promo {
+  clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+}
+
 .mainImg {
   display: inline;
   width: 100%;
 }
 
 .mainheading {
-  color: rgb(7, 138, 190);
+  color: rgb(2, 99, 138);
   letter-spacing: 2px;
   font-size: 6rem;
   font-weight: 400;
