@@ -17,3 +17,9 @@ function initMap() {
     map: map,
   });
 }
+
+//Navbar
+
+$(window).scroll(function () {
+  $("nav").toggleClass("scrolled", $(this).scrollTop() > 50);
+});
