@@ -291,8 +291,12 @@ header {
   background-image: url(https://images.unsplash.com/photo-1549084415-a1b69bc0a4ac?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTR8fHN0YXR1ZSUyMG9mJTIwbGliZXJ0eXxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
 }
 .helloh3 {
-  color: rgb(255, 255, 255);
+  color: rgb(2, 99, 138);
   font-size: 23px;
+}
+
+.whit {
+  color: rgb(255, 255, 255);
 }
 
 .top-new-paragraf {
