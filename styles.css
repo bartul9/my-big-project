@@ -3,6 +3,10 @@ body {
   font-family: "Merriweather", serif;
 }
 
+/* Everything is inside this box that is inside the body */
+
+/* -------------------------------- */
+
 .everything {
   border-bottom: 1px solid rgb(12, 185, 216);
   background: rgb(148, 187, 233);
@@ -14,7 +18,9 @@ body {
   );
 }
 
-/* Scrollbar */
+/* Scrollbars  */
+
+/* --------------------------- */
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -30,8 +36,10 @@ body {
   -webkit-box-shadow: inset 0 0 6px rgba(12, 159, 204, 0.767);
 }
 
-/* *************************************** */
+/* -------------------------------------------- */
+
 /* Navbar */
+
 .navbar {
   background-color: #3ed2f780;
   border-radius: 1px;
@@ -53,7 +61,8 @@ body {
   color: rgb(5, 141, 151);
 }
 
-/* ************************************** */
+/* ---------------------------------- */
+
 /* Header and its components */
 
 header {
@@ -67,11 +76,6 @@ header {
   background-position: center;
 }
 
-.mainImg {
-  display: inline;
-  width: 100%;
-}
-
 .mainheading {
   color: rgb(2, 99, 138);
   letter-spacing: 2px;
@@ -79,7 +83,9 @@ header {
   font-weight: 400;
 }
 
-/* Under heading div */
+/* ------------------------------------------- */
+
+/* First box with paragraf and NYC seal */
 
 .underHeading {
   padding: 0;
@@ -87,11 +93,18 @@ header {
   flex-direction: row;
 }
 
-.paragrafDiv {
-  background-image: url(/ny-my-seal2.png);
+/* NYC seal */
+
+#desappear2 {
+  background-image: url(/nyc-seal-my.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+/* Div with text */
+
+.paragrafDiv {
   padding: 25px;
   color: rgba(8, 113, 155, 0.774);
   font-size: 17.5px;
@@ -105,107 +118,98 @@ header {
   font-family: "Cinzel", serif;
 }
 
-.animatedDiv {
+/* Div with YouTube videos that i removed for now */
+/* .animatedDiv {
   box-sizing: border-box;
   height: 450px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
-
-/* ********************* */
-/* First paragraf boxes */
-
-.firstDiv {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-content: space-evenly;
-}
-
-.videoYt {
+} */
+/* .videoYt {
   border: 1px solid #000000;
   box-sizing: border-box;
   width: 50%;
   height: 50%;
-}
+} */
 
-/* icons */
+/* ----------------------------- */
 
-.responsive-img {
-  width: 80px;
-}
+/* angled divs DAY and NIGHT */
 
-/********************/
-
-/* angled divs */
-
-.captionOne {
+.newsSection {
+  min-height: 60vh;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.captionTwo {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .h2headings {
   font-size: 32px;
   font-weight: 400;
 }
-.day {
-  color: black;
-  font-weight: 700;
-}
 
-.night {
-  color: white;
-}
+/* Night */
 
-.figureDay {
-  background-color: rgb(185, 242, 247);
-  margin-bottom: 0;
-}
 .figureNight {
   background-color: rgba(0, 0, 0, 0.623);
   margin-bottom: 0;
 }
-
-.figureDay:hover {
-  background-color: rgb(134, 190, 196);
-  transition-duration: 500ms;
-  transition-timing-function: ease-in-out;
-  cursor: pointer;
+.secondHalf img {
+  clip-path: polygon(100% 100%, 100% 0, 0 0, 0 90%);
+  width: 100%;
 }
-
 .figureNight:hover {
   background-color: #00000059;
   transition-duration: 500ms;
   transition-timing-function: ease-in-out;
   cursor: pointer;
 }
-
-.secondHalf {
+.night {
+  color: white;
+}
+.captionTwo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.secondHalf img {
-  clip-path: polygon(100% 100%, 100% 0, 0 0, 0 90%);
-  width: 100%;
+/* Day */
+
+.figureDay {
+  background-color: rgb(185, 242, 247);
+  margin-bottom: 0;
 }
 
 .hero img {
   clip-path: polygon(0% 0, 100% 0, 100% 90%, 0 100%);
   width: 100%;
 }
+.figureDay:hover {
+  background-color: rgb(134, 190, 196);
+  transition-duration: 500ms;
+  transition-timing-function: ease-in-out;
+  cursor: pointer;
+}
+.day {
+  color: black;
+  font-weight: 700;
+}
+.captionOne {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
-/* text sectiobn */
+/* --------------------------------- */
+
+/* text section with quotes */
+
 .paragrafDivTwo {
   padding: 25px;
-  color: rgba(2, 99, 138, 0.774);
+  color: rgba(2, 99, 138, 0.76);
   font-size: 19px;
   font-weight: 600;
   text-align: center;
@@ -225,11 +229,12 @@ header {
   quotes: "“";
 }
 
+/* ---------------------------------------- */
+
 /* Part with 4 divs and angled div around them */
 
 .promo {
   clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0 100%);
-  /* clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%); */
   margin-bottom: 100px;
 }
 
@@ -250,21 +255,7 @@ header {
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
 }
 
-/* *************** */
-
-/* section with top news */
-/* ******************************** */
-
-.newsSection {
-  min-height: 60vh;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0;
-}
-
-/* Section with 4 divs */
-/* ********************************** */
+/* Heading, visit places */
 
 #btfPlaces {
   color: rgb(0, 107, 182);
@@ -275,12 +266,15 @@ header {
   top: -50px;
 }
 
+/* Section aroun everything */
+
 #card-section {
   padding: 0;
 }
 
+/* All six cards NOT IN ORDER! Here they are in order but on the page numbers are mixed */
+
 #cards {
-  /* border: 3px solid #3ed2f7; */
   height: 500px;
   display: flex;
   flex-direction: column;
@@ -319,11 +313,16 @@ header {
 .cardSix {
   background-image: url(https://images.unsplash.com/photo-1549084415-a1b69bc0a4ac?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NTR8fHN0YXR1ZSUyMG9mJTIwbGliZXJ0eXxlbnwwfDB8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
 }
+
+/* Blue text under the cards */
+
 .helloh3 {
   color: rgb(21, 162, 209);
   font-family: "Satisfy", cursive;
   font-size: 28px;
 }
+
+/* White text under the cards */
 
 .whit {
   color: rgb(255, 255, 255);
@@ -332,6 +331,8 @@ header {
   font-weight: 600;
   letter-spacing: 0px;
 }
+
+/* Part of the cards with text, this aligns them */
 
 .top-new-paragraf {
   padding: 20px;
@@ -343,18 +344,26 @@ header {
   justify-content: space-between;
 }
 
+/* All h3, not sure what it does, check it! */
 h3 {
   font-size: 20px;
   text-align: center;
 }
 
-/* .hidden {
+/* ------------------------------- */
+
+/* .hidden for javascript if needed */
+
+/* .noneDisplay {
   display: none;
 } */
-.noneDisplay {
-  display: none;
-}
+
+/* ---------------------------------------- */
+
+/* Icons and divs they are in */
+
 /* Facebook, twitter, etc */
+
 .firstBoxBig {
   display: flex;
   flex-direction: row;
@@ -362,7 +371,22 @@ h3 {
   padding: 50px;
 }
 
-/****************************************/
+.firstDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+/* icons */
+
+.responsive-img {
+  width: 80px;
+}
+
+/*---------------------------------------*/
+
+/*---------- map------------ */
 
 #where {
   color: rgb(2, 99, 138);
@@ -381,8 +405,9 @@ h3 {
   border-radius: 5px;
 }
 
+/* ----------------------------------------- */
+
 /* Form and its parts */
-/* ***************************** */
 
 .writeToUs {
   font-size: 35px;
@@ -412,8 +437,10 @@ h3 {
   color: #6d6c6cb4;
 }
 
-/* media queries */
-/* ***************************** */
+/* ------------------------------ */
+
+/* media queries */ /* I have to organize this better*/
+
 @media (max-width: 1200px) {
   .paragrafDiv {
     text-align: start;
@@ -447,7 +474,6 @@ h3 {
   }
   .promo {
     clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-    /* clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%); */
   }
   .underHeading {
     flex-direction: column;
