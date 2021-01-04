@@ -26,15 +26,18 @@ function initMap() {
 
 //  Paragraf disapear on hover
 
-const paragrafNone = document.querySelector("#desappear");
+// const paragrafNone = document.querySelector("#desappear");
 
-paragrafNone.addEventListener(
-  "mouseover",
-  function (event) {
-    event.target.style.color = "rgba(1,1,1,0.0)";
-    setTimeout(function () {
-      event.target.style.color = "";
-    }, 2000);
-  },
-  false
-);
+// paragrafNone.addEventListener("mouseover", function (event) {
+//   event.target.style.color = "rgba(2, 99, 138, 0.774)";
+// });
+
+// paragrafNone.addEventListener("mouseout", function (event) {
+//   event.target.style.color = "rgba(2, 99, 138, 0.0)";
+// });
+
+// setTimeout(function () {
+//   event.target.style.color = "";
+// }, 2000);
+// },
+// false
