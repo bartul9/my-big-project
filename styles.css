@@ -168,7 +168,7 @@ header {
   cursor: pointer;
 }
 .night {
-  color: white;
+  color: rgb(11, 205, 219);
 }
 .captionTwo {
   display: flex;
@@ -194,7 +194,7 @@ header {
   cursor: pointer;
 }
 .day {
-  color: black;
+  color: rgb(4, 144, 187);
   font-weight: 700;
 }
 .captionOne {
@@ -447,6 +447,11 @@ h3 {
     align-items: flex-start;
   }
 }
+.paragrafDivTwo {
+  text-align: start;
+  align-items: flex-start;
+}
+
 @media (max-width: 770px) {
   .newsSection {
     flex-direction: column;
