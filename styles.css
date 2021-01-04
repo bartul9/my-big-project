@@ -201,7 +201,7 @@ header {
 /* text sectiobn */
 .paragrafDivTwo {
   padding: 25px;
-  color: rgba(2, 99, 138, 0.747);
+  color: rgba(2, 99, 138, 0.774);
   font-size: 19px;
   font-weight: 600;
   text-align: center;
@@ -211,7 +211,7 @@ header {
   display: flex;
   align-items: center;
   font-family: "Cinzel", serif;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Yankees_logo.svg/1200px-Yankees_logo.svg.png);
+  background-image: url(/yankee.logo.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
