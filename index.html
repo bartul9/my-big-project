@@ -96,40 +96,81 @@
           made up of five boroughs, each of which is a county of the State of
           New York.
         </p>
-        <a
-          href="https://en.wikipedia.org/wiki/New_York_City"
-          target="_blank"
-          class="col-md-6"
-          id="desappear2"
-        ></a>
+        <div class="container-fluid" id="desappear2"></div>
       </div>
 
       <!-- -------------------------------- -->
 
       <!-- Angled section with images -->
+      <section id="wather">
+        <div class="col-md-12 wthr">
+          <h3>
+            <a id="hourLink">New York City, United States</a>
+          </h3>
+          <iframe
+            src="https://www.zeitverschiebung.net/clock-widget-iframe-v2?language=en&size=medium&timezone=America%2FNew_York"
+            width="100%"
+            height="115"
+            frameborder="0"
+            seamless
+          ></iframe>
+        </div>
+        <div id="weather" class="col-md-12">
+          <a
+            class="weatherwidget-io"
+            href="https://forecast7.com/en/40d71n74d01/new-york/"
+            data-label_1="NEW YORK"
+            data-label_2="WEATHER"
+            data-theme="original"
+            >NEW YORK WEATHER</a
+          >
+          <script>
+            !(function (d, s, id) {
+              var js,
+                fjs = d.getElementsByTagName(s)[0];
+              if (!d.getElementById(id)) {
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://weatherwidget.io/js/widget.min.js";
+                fjs.parentNode.insertBefore(js, fjs);
+              }
+            })(document, "script", "weatherwidget-io-js");
+          </script>
+        </div>
+      </section>
 
       <section class="container-fluid newsSection">
         <div class="hero col-md-6">
-          <figure class="figureDay">
-            <img
-              src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
-              alt=""
-            />
-            <figcaption class="captionOne">
-              <h2 class="h2headings day">Day</h2>
-            </figcaption>
-          </figure>
+          <a
+            href="https://www.google.com/search?q=new+york+day&source=lmns&bih=625&biw=1366&rlz=1C1CHBD_enHR925HR925&hl=en&sa=X&ved=2ahUKEwjt0J3v1IruAhWTxOAKHflvAxgQ_AUoAHoECAEQAA"
+            target="_blank"
+          >
+            <figure class="figureDay">
+              <img
+                src="https://images.unsplash.com/photo-1499092346589-b9b6be3e94b2?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
+                alt=""
+              />
+              <figcaption class="captionOne">
+                <h2 class="h2headings day">Day</h2>
+              </figcaption>
+            </figure></a
+          >
         </div>
         <div class="secondHalf col-md-6">
-          <figure class="figureNight">
-            <img
-              src="https://images.unsplash.com/photo-1510256984962-6a9ca9592c1f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-              alt=""
-            />
-            <figcaption class="captionTwo">
-              <h2 class="h2headings night">Night</h2>
-            </figcaption>
-          </figure>
+          <a
+            href="https://www.google.com/search?bih=625&biw=1366&rlz=1C1CHBD_enHR925HR925&hl=en&sxsrf=ALeKk02DgPuP0kqaRhU3YHa5WC_rV2QV-w%3A1610051407138&ei=T2_3X-fqB8H1qwHH-4qADA&q=new+york+night&oq=new+york+night&gs_lcp=CgZwc3ktYWIQAzIHCCMQyQMQJzIECCMQJzIHCAAQFBCHAjICCAAyAggAMgIIADICCAAyAggAMgIIADICCAA6BAgAEEc6BwgAEMkDEEM6BwguEBQQhwI6BQgAEMsBOgUILhDJAzoFCC4QywE6CAguEMcBEK8BOgQILhAKOgQIABAKOgIILlCN2wJY7uYCYILoAmgAcAJ4AIAB3gGIAdwJkgEFMC42LjGYAQCgAQGqAQdnd3Mtd2l6yAEIwAEB&sclient=psy-ab&ved=0ahUKEwinzsTx1IruAhXB-ioKHce9AsAQ4dUDCA0&uact=5"
+            target="_blank"
+          >
+            <figure class="figureNight">
+              <img
+                src="https://images.unsplash.com/photo-1510256984962-6a9ca9592c1f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                alt=""
+              />
+              <figcaption class="captionTwo">
+                <h2 class="h2headings night">Night</h2>
+              </figcaption>
+            </figure></a
+          >
         </div>
       </section>
 
@@ -156,8 +197,8 @@
 
       <!-- Div class promo with cards -->
 
-      <section id="whatToSee" id="card-section" class="container-fluid">
-        <div class="promo">
+      <section id="card-section" class="container-fluid">
+        <div id="whatToSee" class="promo">
           <h2 id="btfPlaces">Visit beautiful places</h2>
 
           <div class="row">
