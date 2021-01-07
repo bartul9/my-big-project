@@ -3,6 +3,10 @@ body {
   font-family: "Merriweather", serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Everything is inside this box that is inside the body */
 
 /* -------------------------------- */
@@ -110,9 +114,25 @@ header {
   display: block;
 }
 
-/* Add a photo with slightly changed color */
-#desappear2:hover {
-  background-color: rgba(155, 198, 247, 0.411);
+/* Wather and clock */
+
+.wthr {
+  margin-bottom: 50px;
+}
+
+#wather {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+#weather {
+  display: flex;
+  flex-direction: column;
+}
+
+#hourLink {
+  color: rgba(8, 113, 155, 0.774);
+  text-decoration: none;
 }
 
 /* Div with text */
@@ -232,7 +252,7 @@ header {
   display: flex;
   align-items: center;
   font-family: "Cinzel", serif;
-  background-image: url(/yankee.logo.png);
+  background-image: url(/yankee.logo5.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
