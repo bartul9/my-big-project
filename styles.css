@@ -70,16 +70,16 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(https://images.unsplash.com/photo-1445023086979-7244a12345a8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=751&q=80);
+  background-image: url(/492754.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .mainheading {
-  color: rgb(2, 99, 138);
+  color: rgba(255, 255, 255, 0.774);
   letter-spacing: 2px;
-  font-size: 6rem;
+  font-size: 7rem;
   font-weight: 400;
 }
 
@@ -91,15 +91,28 @@ header {
   padding: 0;
   display: flex;
   flex-direction: row;
+  background: rgb(148, 187, 233);
+  background: radial-gradient(
+    circle,
+    rgba(148, 187, 233, 0.7987570028011204) 0%,
+    rgba(148, 233, 232, 0.8015581232492998) 50%,
+    rgba(148, 187, 233, 0.7987570028011204) 100%
+  );
 }
 
 /* NYC seal */
 
 #desappear2 {
-  background-image: url(/nyc-seal-my.png);
+  background-image: url(/nyc-seal-blue2.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
+  display: block;
+}
+
+/* Add a photo with slightly changed color */
+#desappear2:hover {
+  background-color: rgba(155, 198, 247, 0.411);
 }
 
 /* Div with text */
@@ -223,6 +236,11 @@ header {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
+}
+.underHeading2 {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
 }
 
 #b {
@@ -437,6 +455,18 @@ h3 {
   color: #6d6c6cb4;
 }
 
+footer {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#lastLink {
+  text-decoration: none;
+  color: rgba(8, 113, 155, 0.884);
+}
+
 /* ------------------------------ */
 
 /* media queries */ /* I have to organize this better*/
@@ -449,6 +479,9 @@ h3 {
 }
 
 @media (max-width: 770px) {
+  .underHeading {
+    flex-direction: column;
+  }
   .newsSection {
     flex-direction: column;
   }
@@ -481,14 +514,14 @@ h3 {
   }
   .paragrafDiv {
     text-align: start;
-    align-items: flex-start;
+    /* align-items: flex-start; */
   }
   .firstDiv {
     margin-bottom: 35px;
   }
   .paragrafDivTwo {
     text-align: start;
-    align-items: flex-start;
+    /* align-items: flex-start; */
   }
 }
 
