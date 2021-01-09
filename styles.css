@@ -121,8 +121,7 @@ header {
 }
 
 #wather {
-  margin-top: 150px;
-  margin-bottom: 150px;
+  margin-top: 70px;
 }
 
 #weather {
@@ -252,7 +251,7 @@ header {
   display: flex;
   align-items: center;
   font-family: "Cinzel", serif;
-  background-image: url(/yankee.logo5.png);
+  background-image: url(/yankee.logo8.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
@@ -499,9 +498,6 @@ footer {
 }
 
 @media (max-width: 770px) {
-  .underHeading {
-    flex-direction: column;
-  }
   .newsSection {
     flex-direction: column;
   }
@@ -542,6 +538,7 @@ footer {
   .paragrafDivTwo {
     text-align: start;
     /* align-items: flex-start; */
+    background-image: url(/yankee.logo.png);
   }
 }
 
