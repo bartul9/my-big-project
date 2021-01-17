@@ -3,20 +3,15 @@
 //Goolge maps
 
 //Initialize and add the map
-function initMap() {
-  // The location of New York 40.7128° N, ° W
-  const newYork = { lat: 40.7128, lng: -74.006 };
-  // The map, centered at New York
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: newYork,
-  });
-  // The marker, positioned at New York
-  const marker = new google.maps.Marker({
-    position: newYork,
-    map: map,
-  });
-}
+
+var map = L.map("mapid").setView([40.7128, -74.006], 8);
+
+L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+}).addTo(map);
+
+L.marker([40.7128, -74.006]).addTo(map);
 
 //Navbar
 
