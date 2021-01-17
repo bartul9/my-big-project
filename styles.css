@@ -63,6 +63,8 @@ a {
 }
 .nav-link:hover {
   color: rgb(5, 141, 151);
+  letter-spacing: 0.5px;
+  transition: 0.3s;
 }
 
 /* ---------------------------------- */
@@ -418,12 +420,15 @@ h3 {
 /* icons */
 
 .responsive-img {
-  width: 80px;
+  width: 70px;
 }
 
 /*---------------------------------------*/
 
 /*---------- map------------ */
+#mapid {
+  height: 400px;
+}
 
 #where {
   color: rgb(2, 99, 138);
@@ -512,9 +517,9 @@ footer {
     border-left: none;
   }
   .responsive-img {
-    width: 70px;
-    margin-left: 30px;
-    margin-right: 30px;
+    width: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   .figureDay {
     margin-bottom: 0;
