@@ -55,7 +55,7 @@ a {
   margin-left: 15px;
 }
 .nav-link:hover {
-  color: rgb(5, 141, 151);
+  color: rgb(2, 108, 179);
   letter-spacing: 0.5px;
   transition: 0.3s;
 }
@@ -110,7 +110,14 @@ header {
 }
 
 #wather {
-  margin-top: 70px;
+  padding-top: 70px;
+  background: rgb(49, 167, 201);
+  background: linear-gradient(
+    90deg,
+    rgba(49, 167, 201, 1) 0%,
+    rgba(190, 230, 252, 1) 51%,
+    rgba(49, 167, 201, 1) 100%
+  );
 }
 
 #weather {
@@ -139,7 +146,6 @@ header {
   align-items: center;
   font-family: "Satisfy", cursive;
   padding: 20px;
-  /* font-family: "Cinzel", serif; */
 }
 
 /* Div with YouTube videos that i removed for now */
@@ -233,22 +239,23 @@ header {
 /* text section with quotes */
 
 .paragrafDivTwo {
-  color: rgba(255, 255, 255, 0.795);
-  font-size: 4rem;
-  font-weight: 500;
+  color: rgba(8, 142, 196, 0.99);
+  font-size: 4.5rem;
+  letter-spacing: 2px;
+  font-weight: 400;
   height: 450px;
   margin: 0;
-  overflow: auto;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Satisfy", cursive;
-  background-image: url(/yankee.logo8.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
 }
+
+/* #neverSleeps {
+  position: relative;
+  top: 70px;
+} */
 
 #b {
   quotes: "“";
@@ -264,11 +271,12 @@ header {
 }
 
 .promo {
-  background: rgb(148, 187, 233);
-  background: radial-gradient(
-    circle,
-    rgba(148, 233, 232, 0.8015581232492998) 50%,
-    rgba(148, 187, 233, 0.7987570028011204) 100%
+  background: rgb(49, 167, 201);
+  background: linear-gradient(
+    90deg,
+    rgba(49, 167, 201, 1) 0%,
+    rgba(190, 230, 252, 1) 51%,
+    rgba(49, 167, 201, 1) 100%
   );
   color: #fff;
   font-family: "Fira Sans", sans-serif;
@@ -282,9 +290,9 @@ header {
 /* Heading, visit places */
 
 #btfPlaces {
-  color: rgba(8, 142, 196, 0.8);
+  color: rgba(255, 255, 255, 0.99);
   font-family: "Satisfy", cursive;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 500;
   position: relative;
   top: -50px;
@@ -556,19 +564,6 @@ footer {
   }
   .firstDiv {
     margin-bottom: 35px;
-  }
-  .paragrafDivTwo {
-    background-image: url(/yankee.logo.png);
-  }
-  .everything {
-    border-bottom: 1px solid rgba(12, 185, 216, 0.589);
-    background: rgb(148, 187, 233);
-    background: radial-gradient(
-      circle,
-      rgba(148, 187, 233, 0.7987570028011204) 0%,
-      rgba(148, 233, 232, 0.8015581232492998) 50%,
-      rgba(148, 187, 233, 0.7987570028011204) 100%
-    );
   }
 }
 
