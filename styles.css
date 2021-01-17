@@ -140,8 +140,8 @@ header {
 
 .paragrafDiv {
   padding: 25px;
-  color: rgba(8, 113, 155, 0.774);
-  font-size: 17.5px;
+  color: rgba(8, 113, 155, 0.6);
+  font-size: 22px;
   font-weight: 600;
   text-align: center;
   height: 450px;
@@ -149,7 +149,8 @@ header {
   overflow: auto;
   display: flex;
   align-items: center;
-  font-family: "Cinzel", serif;
+  font-family: "Satisfy", cursive;
+  /* font-family: "Cinzel", serif; */
 }
 
 /* Div with YouTube videos that i removed for now */
@@ -179,10 +180,10 @@ header {
   flex-wrap: wrap;
   padding: 0;
 }
-
 .h2headings {
-  font-size: 32px;
-  font-weight: 400;
+  font-family: "Satisfy", cursive;
+  font-size: 35px;
+  font-weight: 600;
 }
 
 /* Night */
@@ -202,6 +203,7 @@ header {
   cursor: pointer;
 }
 .night {
+  font-weight: 500;
   color: rgb(11, 205, 219);
 }
 .captionTwo {
@@ -242,17 +244,17 @@ header {
 /* text section with quotes */
 
 .paragrafDivTwo {
-  padding: 25px;
-  color: rgba(2, 99, 138, 0.76);
-  font-size: 19px;
-  font-weight: 600;
+  padding: 30px;
+  color: rgba(12, 132, 180, 0.719);
+  font-size: 36px;
+  font-weight: 500;
   text-align: center;
   height: 450px;
   margin: 0;
   overflow: auto;
   display: flex;
   align-items: center;
-  font-family: "Cinzel", serif;
+  font-family: "Satisfy", cursive;
   background-image: url(/yankee.logo8.png);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -432,7 +434,9 @@ h3 {
 
 #where {
   color: rgb(2, 99, 138);
-  font-size: 25px;
+  font-size: 35px;
+  margin-bottom: 25px;
+  font-family: "Satisfy", cursive;
 }
 /* Google map */
 .maps {
@@ -461,6 +465,7 @@ h3 {
   margin-top: 120px;
   color: rgb(2, 99, 138);
   margin-bottom: 30px;
+  font-family: "Satisfy", cursive;
 }
 
 .myBtn {
@@ -487,8 +492,16 @@ footer {
 }
 
 #lastLink {
+  font-family: "Satisfy", cursive;
   text-decoration: none;
   color: rgba(8, 113, 155, 0.884);
+  font-size: 24px;
+}
+
+#lastLink:hover {
+  color: rgb(7, 132, 185);
+  letter-spacing: 1px;
+  transition: 1s;
 }
 
 /* ------------------------------ */
