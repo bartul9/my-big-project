@@ -13,13 +13,7 @@ a {
 
 .everything {
   border-bottom: 1px solid rgb(12, 185, 216);
-  background: rgb(148, 187, 233);
-  background: radial-gradient(
-    circle,
-    rgba(148, 187, 233, 0.7987570028011204) 0%,
-    rgba(148, 233, 232, 0.8015581232492998) 50%,
-    rgba(148, 187, 233, 0.7987570028011204) 100%
-  );
+  background: rgb(148, 218, 233);
 }
 
 /* Scrollbars  */
@@ -53,13 +47,12 @@ a {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,220,255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-.navbar-brand {
-  color: #000000;
-  font-size: 25px;
-}
 .nav-link {
-  font-size: 20px;
+  font-size: 23px;
   color: #ffffff;
+  font-family: "Satisfy", cursive;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 .nav-link:hover {
   color: rgb(5, 141, 151);
@@ -85,8 +78,9 @@ header {
 .mainheading {
   color: rgba(255, 255, 255, 0.774);
   letter-spacing: 2px;
-  font-size: 7rem;
+  font-size: 9rem;
   font-weight: 400;
+  font-family: "Satisfy", cursive;
 }
 
 /* ------------------------------------------- */
@@ -97,13 +91,6 @@ header {
   padding: 0;
   display: flex;
   flex-direction: row;
-  background: rgb(148, 187, 233);
-  background: radial-gradient(
-    circle,
-    rgba(148, 187, 233, 0.7987570028011204) 0%,
-    rgba(148, 233, 232, 0.8015581232492998) 50%,
-    rgba(148, 187, 233, 0.7987570028011204) 100%
-  );
 }
 
 /* NYC seal */
@@ -134,15 +121,16 @@ header {
 #hourLink {
   color: rgba(8, 113, 155, 0.774);
   text-decoration: none;
+  font-family: "Satisfy", cursive;
+  font-size: 29px;
 }
 
 /* Div with text */
 
 .paragrafDiv {
-  padding: 25px;
-  color: rgba(8, 113, 155, 0.6);
-  font-size: 22px;
-  font-weight: 600;
+  color: rgba(39, 160, 207, 0.986);
+  font-size: 24px;
+  font-weight: 500;
   text-align: center;
   height: 450px;
   margin: 0;
@@ -150,6 +138,7 @@ header {
   display: flex;
   align-items: center;
   font-family: "Satisfy", cursive;
+  padding: 20px;
   /* font-family: "Cinzel", serif; */
 }
 
@@ -244,26 +233,21 @@ header {
 /* text section with quotes */
 
 .paragrafDivTwo {
-  padding: 30px;
-  color: rgba(12, 132, 180, 0.719);
-  font-size: 36px;
+  color: rgba(255, 255, 255, 0.795);
+  font-size: 4rem;
   font-weight: 500;
-  text-align: center;
   height: 450px;
   margin: 0;
   overflow: auto;
+  text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center;
   font-family: "Satisfy", cursive;
   background-image: url(/yankee.logo8.png);
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: contain;
-}
-.underHeading2 {
-  padding: 0;
-  display: flex;
-  flex-direction: row;
 }
 
 #b {
@@ -283,7 +267,6 @@ header {
   background: rgb(148, 187, 233);
   background: radial-gradient(
     circle,
-    rgba(148, 187, 233, 0.7987570028011204) 0%,
     rgba(148, 233, 232, 0.8015581232492998) 50%,
     rgba(148, 187, 233, 0.7987570028011204) 100%
   );
@@ -299,7 +282,7 @@ header {
 /* Heading, visit places */
 
 #btfPlaces {
-  color: rgb(0, 107, 182);
+  color: rgba(8, 142, 196, 0.8);
   font-family: "Satisfy", cursive;
   font-size: 40px;
   font-weight: 500;
@@ -433,7 +416,9 @@ h3 {
 }
 
 #where {
-  color: rgb(2, 99, 138);
+  position: relative;
+  top: -42px;
+  color: rgba(8, 142, 196, 0.99);
   font-size: 35px;
   margin-bottom: 25px;
   font-family: "Satisfy", cursive;
@@ -444,9 +429,9 @@ h3 {
   margin-top: 100px;
 }
 
-#map {
+#mapid {
   margin-top: 25px;
-  height: 400px;
+  height: 315px;
   width: 100%;
   border-radius: 5px;
 }
@@ -455,17 +440,29 @@ h3 {
 
 /* Form and its parts */
 
+.container-6 {
+  margin-top: 70px;
+}
+
 .writeToUs {
+  position: relative;
+  top: -10px;
   font-size: 35px;
-  margin-bottom: 35px;
   margin-left: 0px;
+  margin-bottom: 30px;
 }
 
 .form {
-  margin-top: 120px;
-  color: rgb(2, 99, 138);
+  margin-top: 67px;
+  text-align: center;
+  color: rgba(8, 142, 196, 0.99);
   margin-bottom: 30px;
   font-family: "Satisfy", cursive;
+}
+
+.labelsForm {
+  font-size: 19px;
+  color: rgba(8, 142, 196, 0.9);
 }
 
 .myBtn {
@@ -476,6 +473,7 @@ h3 {
   color: #ffffff;
   background-color: #3ed2f7;
   border: none;
+  font-size: 20px;
 }
 
 .myBtn:hover {
@@ -492,9 +490,10 @@ footer {
 }
 
 #lastLink {
+  margin-top: 150px;
   font-family: "Satisfy", cursive;
   text-decoration: none;
-  color: rgba(8, 113, 155, 0.884);
+  color: rgb(8, 142, 196);
   font-size: 24px;
 }
 
@@ -512,6 +511,10 @@ footer {
   .paragrafDiv {
     text-align: start;
     align-items: flex-start;
+  }
+  .nav-link {
+    margin-right: 0px;
+    margin-left: 0px;
   }
 }
 
@@ -548,19 +551,33 @@ footer {
   }
   .paragrafDiv {
     text-align: start;
+    padding: 20px;
     /* align-items: flex-start; */
   }
   .firstDiv {
     margin-bottom: 35px;
   }
   .paragrafDivTwo {
-    text-align: start;
-    /* align-items: flex-start; */
     background-image: url(/yankee.logo.png);
+  }
+  .everything {
+    border-bottom: 1px solid rgba(12, 185, 216, 0.589);
+    background: rgb(148, 187, 233);
+    background: radial-gradient(
+      circle,
+      rgba(148, 187, 233, 0.7987570028011204) 0%,
+      rgba(148, 233, 232, 0.8015581232492998) 50%,
+      rgba(148, 187, 233, 0.7987570028011204) 100%
+    );
   }
 }
 
 @media (max-width: 476px) {
 }
 @media (max-width: 350px) {
+  .responsive-img {
+    width: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
