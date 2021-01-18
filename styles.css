@@ -87,12 +87,6 @@ header {
 
 /* First box with paragraf and NYC seal */
 
-.underHeading {
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-}
-
 /* NYC seal */
 
 #desappear2 {
@@ -100,7 +94,7 @@ header {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  display: block;
+  height: 450px;
 }
 
 /* Wather and clock */
@@ -147,22 +141,6 @@ header {
   font-family: "Satisfy", cursive;
   padding: 20px;
 }
-
-/* Div with YouTube videos that i removed for now */
-/* .animatedDiv {
-  box-sizing: border-box;
-  height: 450px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-} */
-/* .videoYt {
-  border: 1px solid #000000;
-  box-sizing: border-box;
-  width: 50%;
-  height: 50%;
-} */
 
 /* ----------------------------- */
 
@@ -239,9 +217,9 @@ header {
 /* text section with quotes */
 
 .paragrafDivTwo {
-  color: rgba(8, 142, 196, 0.99);
+  color: rgb(37, 138, 221);
   font-size: 4.5rem;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   font-weight: 400;
   height: 450px;
   margin: 0;
@@ -425,7 +403,7 @@ h3 {
 
 #where {
   position: relative;
-  top: -42px;
+  top: -43px;
   color: rgba(8, 142, 196, 0.99);
   font-size: 35px;
   margin-bottom: 25px;
@@ -527,6 +505,10 @@ footer {
 }
 
 @media (max-width: 770px) {
+  .helloh3 {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+  }
   .newsSection {
     flex-direction: column;
   }
@@ -554,9 +536,7 @@ footer {
   .promo {
     clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
   }
-  .underHeading {
-    flex-direction: column;
-  }
+
   .paragrafDiv {
     text-align: start;
     padding: 20px;
