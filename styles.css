@@ -48,7 +48,8 @@ a {
 /* Navbar */
 
 .navbar {
-  background-color: #3ed2f780;
+  background-color: rgba(21, 162, 209, 0.644);
+  /* background-color: #3ed2f780; */
   border-radius: 1px;
 }
 
@@ -64,7 +65,7 @@ a {
   margin-left: 15px;
 }
 .nav-link:hover {
-  color: rgb(52, 154, 223);
+  color: rgb(25, 120, 184);
   letter-spacing: 0.5px;
   transition: 0.3s;
 }
@@ -82,10 +83,11 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
+  border-bottom: 1px solid white;
 }
 
 .mainheading {
-  color: rgb(85, 182, 204);
+  color: rgb(21, 162, 209);
   letter-spacing: 0.5rem;
   font-size: 12rem;
   font-weight: 500;
@@ -113,6 +115,8 @@ header {
 }
 
 #wather {
+  border-top: 1px solid white;
+
   padding-top: 70px;
   background: rgb(49, 167, 201);
   background: linear-gradient(
@@ -156,6 +160,7 @@ header {
 /* angled divs DAY and NIGHT */
 
 .newsSection {
+  border-bottom: 1px solid white;
   min-height: 60vh;
   display: flex;
   flex-direction: row;
@@ -228,6 +233,7 @@ header {
 .underHeading2 {
   background-image: url(https://images.unsplash.com/photo-1466500419182-8602dc906b51?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80);
   background-position: bottom;
+  border-bottom: 1px solid white;
 }
 
 .paragrafDivTwo {
@@ -430,6 +436,7 @@ h3 {
 }
 
 #mapid {
+  border: 1px solid white;
   margin-top: 25px;
   height: 315px;
   width: 100%;
@@ -456,23 +463,6 @@ h3 {
   visibility: hidden;
   opacity: 0;
 }
-
-/* .myBtn {
-  width: 150px;
-  border-radius: 5px;
-  font-weight: 500;
-  height: 40px;
-  color: #ffffff;
-  background-color: #3ed2f7;
-  border: none;
-  font-size: 20px;
-}
-
-.myBtn:hover {
-  background-color: #3ed2a1f7;
-  transition-duration: 200ms;
-  color: #6d6c6cb4;
-} */
 
 footer {
   display: flex;
@@ -565,6 +555,9 @@ footer {
 }
 
 @media (max-width: 476px) {
+  .container-6 {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 350px) {
   .responsive-img {
