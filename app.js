@@ -1,7 +1,5 @@
 "use strict";
 
-//Goolge maps
-
 //Initialize and add the map
 
 var map = L.map("mapid").setView([40.7128, -74.006], 8);
@@ -13,26 +11,27 @@ L.tileLayer("https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
 
 L.marker([40.7128, -74.006]).addTo(map);
 
-//Navbar
+// Hidden sections
 
-// $(window).scroll(function () {
-//   $("nav").toggleClass("scrolled", $(this).scrollTop() > 50);
-// });
+const allSections = document.querySelectorAll(".section");
 
-//  Paragraf disapear on hover
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
 
-// const paragrafNone = document.querySelector("#desappear");
+  if (!entry.isIntersecting) return;
 
-// paragrafNone.addEventListener("mouseover", function (event) {
-//   event.target.style.color = "rgba(2, 99, 138, 0.774)";
-// });
+  entry.target.classList.remove("section--hidden");
+  observer.unobserve(entry.target);
+};
 
-// paragrafNone.addEventListener("mouseout", function (event) {
-//   event.target.style.color = "rgba(2, 99, 138, 0.0)";
-// });
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15,
+});
 
-// setTimeout(function () {
-//   event.target.style.color = "";
-// }, 2000);
-// },
-// false
+allSections.forEach(function (section) {
+  sectionObserver.observe(section);
+  section.classList.add("section--hidden");
+});
+
+/// Modal window
