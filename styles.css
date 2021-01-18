@@ -9,6 +9,15 @@ a {
 
 /* Everything is inside this box that is inside the body */
 
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.section {
+  transition: transform 1s, opacity 1s;
+}
+
 /* -------------------------------- */
 
 .everything {
@@ -55,7 +64,7 @@ a {
   margin-left: 15px;
 }
 .nav-link:hover {
-  color: rgb(2, 108, 179);
+  color: rgb(52, 154, 223);
   letter-spacing: 0.5px;
   transition: 0.3s;
 }
@@ -69,17 +78,17 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/492754.jpg);
+  background-image: url(https://images.unsplash.com/photo-1448317846460-907988886b33?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 .mainheading {
-  color: rgba(255, 255, 255, 0.774);
-  letter-spacing: 2px;
-  font-size: 9rem;
-  font-weight: 400;
+  color: rgb(85, 182, 204);
+  letter-spacing: 0.5rem;
+  font-size: 12rem;
+  font-weight: 500;
   font-family: "Satisfy", cursive;
 }
 
@@ -129,7 +138,7 @@ header {
 /* Div with text */
 
 .paragrafDiv {
-  color: rgba(39, 160, 207, 0.986);
+  color: rgba(31, 130, 196, 0.897);
   font-size: 24px;
   font-weight: 500;
   text-align: center;
@@ -216,11 +225,16 @@ header {
 
 /* text section with quotes */
 
+.underHeading2 {
+  background-image: url(https://images.unsplash.com/photo-1466500419182-8602dc906b51?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1500&q=80);
+  background-position: bottom;
+}
+
 .paragrafDivTwo {
-  color: rgb(37, 138, 221);
-  font-size: 4.5rem;
-  letter-spacing: 3px;
-  font-weight: 400;
+  color: rgb(255, 255, 255);
+  font-size: 6rem;
+  letter-spacing: 5px;
+  font-weight: 500;
   height: 450px;
   margin: 0;
   text-align: center;
@@ -438,20 +452,12 @@ h3 {
   margin-bottom: 30px;
 }
 
-.form {
-  margin-top: 67px;
-  text-align: center;
-  color: rgba(8, 142, 196, 0.99);
-  margin-bottom: 30px;
-  font-family: "Satisfy", cursive;
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
-.labelsForm {
-  font-size: 19px;
-  color: rgba(8, 142, 196, 0.9);
-}
-
-.myBtn {
+/* .myBtn {
   width: 150px;
   border-radius: 5px;
   font-weight: 500;
@@ -466,7 +472,7 @@ h3 {
   background-color: #3ed2a1f7;
   transition-duration: 200ms;
   color: #6d6c6cb4;
-}
+} */
 
 footer {
   display: flex;
@@ -536,6 +542,11 @@ footer {
   .promo {
     clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
   }
+  .mainheading {
+    color: rgb(46, 167, 194);
+    letter-spacing: 0.5rem;
+    font-size: 9rem;
+  }
 
   .paragrafDiv {
     text-align: start;
@@ -544,6 +555,12 @@ footer {
   }
   .firstDiv {
     margin-bottom: 35px;
+  }
+
+  #neverSleeps {
+    font-weight: 500;
+    font-size: 4rem;
+    color: #ffffff;
   }
 }
 
