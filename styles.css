@@ -87,11 +87,12 @@ header {
 }
 
 .mainheading {
-  color: rgb(21, 162, 209);
+  color: rgb(255, 255, 255);
   letter-spacing: 0.5rem;
   font-size: 12rem;
   font-weight: 500;
   font-family: "Satisfy", cursive;
+  text-shadow: 2px 2px 2px rgb(21, 165, 212);
 }
 
 /* ------------------------------------------- */
@@ -115,8 +116,8 @@ header {
 }
 
 #wather {
+  border-bottom: 1px solid white;
   border-top: 1px solid white;
-
   padding-top: 70px;
   background: rgb(49, 167, 201);
   background: linear-gradient(
@@ -238,6 +239,7 @@ header {
 
 .paragrafDivTwo {
   color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 1px rgb(2, 102, 160);
   font-size: 6rem;
   letter-spacing: 5px;
   font-weight: 500;
@@ -288,12 +290,14 @@ header {
 /* Heading, visit places */
 
 #btfPlaces {
-  color: rgba(255, 255, 255, 0.99);
+  color: rgb(255, 255, 255);
   font-family: "Satisfy", cursive;
   font-size: 45px;
   font-weight: 500;
   position: relative;
   top: -50px;
+  text-shadow: 1px 1px 1px rgb(21, 162, 209);
+  /* background-color: rgba(21, 162, 209, 0.192); */
 }
 
 /* Section aroun everything */
@@ -358,7 +362,7 @@ header {
   color: rgb(255, 255, 255);
   font-family: "Satisfy", cursive;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 0px;
 }
 
@@ -449,6 +453,9 @@ h3 {
 
 .container-6 {
   margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .writeToUs {
@@ -477,12 +484,11 @@ footer {
   text-decoration: none;
   color: rgb(8, 142, 196);
   font-size: 24px;
+  transition: 500ms;
 }
 
 #lastLink:hover {
-  color: rgb(7, 132, 185);
-  letter-spacing: 1px;
-  transition: 1s;
+  color: rgb(2, 179, 255);
 }
 
 /* ------------------------------ */
@@ -555,9 +561,6 @@ footer {
 }
 
 @media (max-width: 476px) {
-  .container-6 {
-    margin-top: 40px;
-  }
 }
 @media (max-width: 350px) {
   .responsive-img {
